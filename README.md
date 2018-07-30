@@ -1,4 +1,4 @@
-# RNAseq_from_CPS1_Narra2016
+# RNAseq_deltaCPS1_Narra2016
 
 Practice RNA seq analysis by re-analyzing the RNA seq data from Narra et al 2016 to find differentially expressed genes between Coccidioides posadasii Silveira WT and CPS1.
 
