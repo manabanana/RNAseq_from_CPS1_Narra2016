@@ -1,6 +1,6 @@
 # Download sequences from NCBI using SRA toolkit
-SRR4015208 - Silveira 48 hr spherule 1
-SRR4015209 - Silveira 48 hr spherule 2
+SRR4015208-Silveira 48 hr spherule 1
+SRR4015209-Silveira 48 hr spherule 2
 SRR4015210 - Delta CPS1 48 hr spherule 1
 SRR4015211 - Delta CPS1 48 hr spherule 2
 
