@@ -56,7 +56,7 @@ PBS script to run Trimmomatic
 ###pcmem=6gb is the max memory per core - optional
 
 
-module load /unsupported/nirav/trimmomatic/0.38
+module load nirav/trimmomatic/0.38
 
 cd /extra/manabanana/oldRNAseq_Narra2016
 
