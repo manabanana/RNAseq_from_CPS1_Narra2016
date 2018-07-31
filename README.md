@@ -7,7 +7,7 @@ About data:
 
 # Programs used (in progress)
 
-- Trimmomatic to trim sequences
+- Trimmomatic to trim fastq sequences
 - FastQC to visualize trimmed sequences
 - STAR
 - DESeq2
