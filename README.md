@@ -6,9 +6,10 @@ About data:
 "RNA-seq was performed, in duplicate, on the C. posadasii and cps1 strain RNAs by 100-bp paired-end reads on an Illumina HiSeq2000 at the University of Arizona Genetics Core facility. Sequencing produced between 2.05 x 10^7 and 2.37 x 10^7 paired-end reads per library (Narra et al 2016)." 
 
 # Programs used (in progress)
-Trimmomatic to trim sequences
-FastQC to visualize trimmed sequences
-STAR
-DESeq2
+
+- Trimmomatic to trim sequences
+- FastQC to visualize trimmed sequences
+- STAR
+- DESeq2
 
 
