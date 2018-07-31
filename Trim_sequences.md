@@ -60,7 +60,7 @@ module load /unsupported/nirav/trimmomatic/0.38
 
 cd /extra/manabanana/oldRNAseq_Narra2016
 
-#Get the unique part of the name for each fastq file to use as the base name for input and output files
+#Get the unique part of each fastq file to use as the base name for input and output files
 #Need to add _1 to get the unique file names, otherwise trimmomatic will run twice for the _1 (forward) and _2 (reverse) files
 for i in fastq/*_1.fastq 
 do
