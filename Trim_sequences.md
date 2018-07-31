@@ -32,7 +32,7 @@ GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT
 >PE2_rc
 AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
 ```
-Used more stringent parameters than what is listed on the Trimmomatic website
+PBS script to run Trimmomatic
 ```
 #!/bin/bash
 #PBS -N trimmomatic
@@ -61,10 +61,13 @@ module load /unsupported/nirav/trimmomatic/0.38
 cd /extra/manabanana/oldRNAseq_Narra2016
 
 #Get the unique part of the name for each fastq file to use as the base name for input and output files
+#Need to add _1 to get the unique file names, otherwise trimmomatic will run twice for the _1 (forward) and _2 (reverse) files
 for i in fastq/*_1.fastq 
 do
 NAME=$(echo $i | cut -f 1 -d "_") 
 
+#Run trimmomatic on each of the unique file names
+#Used parameters that are more stringent than what is listed on the Trimmomatic website
 java -jar /unsupported/nirav/trimmomatic/0.38/trimmomatic-0.38.jar PE -threads 4 -phred33 ${NAME}_1.fastq ${NAME}_2.fastq ${NAME}_F_paired.fq.gz ${NAME}_F_unpaired.fq.gz ${NAME}_R_paired.fq.gz ${NAME}_R_unpaired.fq.gz ILLUMINACLIP:/unsupported/nirav/trimmomatic/0.38/adapters/TruSeq3-PE-2.fa:2:30:10 LEADING:15 TRAILING:15 SLIDINGWINDOW:4:18 AVGQUAL:20 MINLEN:40
 
 
